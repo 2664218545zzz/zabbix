@@ -1,6 +1,7 @@
 # 在playbook中指定主机
-# zabbix软件包下载链接: https://cdn.zabbix.com/zabbix/sources/stable/6.4/zabbix-6.4.7.tar.gz
+# zabbix软件包下载链接: https://cdn.zabbix.com/zabbix/sources/stable/6.4/zabbix-6.4.6.tar.gz
 # 下载至files_local目录下
+# 新版本的版本号在官网可能已经更新，只需要把上面呢链接版本改一下即可
 # zabbix下载地址官网：https://www.zabbix.com/cn/download_sources
 
 # 软件包统一放在/usr/usr/下
