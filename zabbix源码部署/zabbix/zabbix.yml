@@ -1,0 +1,17 @@
+---
+- name: deploy lamp
+  hosts: c85
+  tasks:
+    - name: copy files 
+      copy:
+        src: ../files_local/
+        dest: /usr/src/
+    - import_tasks: ../modules/webs/apache/apache.yml
+    - import_tasks: ../modules/databases/mysql/mysql.yml
+    - import_tasks: ../modules/applacations/php/php.yml
+
+    - name: use script of lamp
+      script: files/lamp.sh
+   
+    - name: use script of zabbix
+      script: files/zabbix.sh
